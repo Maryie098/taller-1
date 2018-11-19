@@ -6,29 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="manifest.json">
-    <title>Intro</title>
+    <title>Olvidé mi contraseña</title>
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="iconos/css/font-awesome.css">
 </head>
 <body>
     <div class="contenedor-principal">
         <header></header>
-        <form action="auth.html">
-            <div class="logo">
-                <img src="img/logo.png" alt="" srcset="">
-                <h2>¿Quienes Somos?</h2>
+        <form action="user.html">
+            <h1>
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Recuperar contraseña
+            </h1>
+            <div class="campos">
+                <label for="">Correo electrónico</label>
+                <input type="text" name="" id="" placeholder="Correo">
             </div>
-            <div class="contenedorVideo">
-                <iframe src="https://www.youtube.com/embed/xPJ-Y8DNGO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div> 
             <div class="botones">
+                <a href="login.html">Iniciar sesión</a>
                 <button class="boton-primario">
                     <i class="fa fa-sign-in" aria-hidden="true"></i>
-                    <span>Comencemos</span>
+                    <span>Enviar</span>
                 </button>
             </div>
         </form>
+        <a class="boton boton-primario boton-regresar" href="auth.html">
+            <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+            <apan>Regresar</span>
+        </a>
         <!-- <footer></footer> -->
     </div>
 </body>

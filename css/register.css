@@ -1,0 +1,25 @@
+.contenedor-principal{
+    /* display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;    
+}
+
+.botones{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.boton-regresar{
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+}
