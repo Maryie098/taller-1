@@ -2,17 +2,21 @@
 :root {
     /* Paleta de colores */
     --color-fondo: #FFFFFF; 
-    --color-primario: #EE2B2B;
+    --color-enfasis: #bb2121;
+    --color-primario: #bb2121;
     --color-primario-oscuro: rgb(114, 5, 5);
     --color-secundario:#5B5858; 
     --color-info:#393333;
     --color-fondo-oscuro: #000000;
     --texto-claro: #FFFFFF;
     --texto-oscuro: #000000;
-    --gris-claro: gray;
+    --gris-tenue: rgba(0, 0, 0, 0.3);
+    --gris-claro: rgba(0, 0, 0, 0.5);
+    --gris-oscuro: rgba(0, 0, 0, 0.8);
     /* Medidas */
     --encabezado: 60px;
     --pie: 60px;
+    --padding: 15px;
 }
 
 /* Importar fuentes */
@@ -48,12 +52,23 @@ h2{
     color: var(--color-primario-oscuro);
 }
 
+.sombra-tenue{
+    box-shadow: 0px 1px 5px -2px var(--gris-tenue);
+}
+
+.sombra-clara{
+    box-shadow: 0px 2px 10px 0px var(--gris-claro);
+}
+
+.sombra-oscura{
+    box-shadow: 0px 3px 10px 1px var(--gris-oscuro);
+}
+
 /* Botones */
 button, .boton{
     padding: 10px;
     border: 0px;
     font-size: 12pt;
-    /* border: 1px solid var(--color-primario); */
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 0px 1px 5px -2px var(--gris-claro);
@@ -122,17 +137,38 @@ a{
     padding-bottom: var(--pie);
 }
 
-header, footer{
+header#barra-superior, footer{
     width: 100%;
     background-color: var(--color-fondo-oscuro);
     position: fixed;
     z-index: 99;
 }
 
-header{
+header#barra-superior{
     top: 0px;
     left: 0px;
     height: var(--encabezado);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#barra-superior>.boton-barra{
+    background-color: var(--color-enfasis);
+    font-size: 18pt;
+    width: var(--encabezado);
+    line-height: var(--encabezado);
+    text-align: center;
+    color: var(--texto-claro);
+    cursor: pointer;
+}
+
+#barra-superior>.titulo-app{
+    color: var(--texto-claro);
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18pt;
 }
 
 footer{
@@ -141,11 +177,29 @@ footer{
     height: var(--pie);
 }
 
+nav#menu-lateral{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color-enfasis);
+    color: var(--texto-claro);
+    transition: transform 300ms;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-100%);
+    z-index: 100;
+}
+
+nav#menu-lateral.menu-abierto{
+    transform: translateX(0px) !important;
+    box-shadow: 5px 0px 10px 0px var(--gris-oscuro);
+}
+
 form{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-    box-shadow: 0px 2px 10px 0px var(--gris-claro);
     border-radius: 5px; 
     padding: 15px;
 }
