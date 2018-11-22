@@ -18,6 +18,9 @@
     --encabezado: 60px;
     --pie: 60px;
     --espaciado: 15px;
+    /* Tiempos */
+    --duracion-transicion: 300ms;
+    --duracion-anim: 500ms;
 }
 
 /* Importar fuentes */
@@ -120,7 +123,7 @@ button, .boton{
     border-radius: 3px;
     cursor: pointer;
     box-shadow: 0px 1px 5px -2px var(--gris-claro);
-    transition: box-shadow 300ms;
+    transition: box-shadow var(--duracion-transicion);
     margin-top: 5px;
     text-decoration: none;
     text-align: center;
@@ -154,7 +157,7 @@ input[type="number"]{
     padding: 5px;
     border: 1px solid var(--gris-claro);
     border-radius: 5px;
-    transition: border-color .5s ease-out;
+    transition: border-color var(--duracion-transicion) ease-out;
     font-size: 15pt;
 }
 
@@ -226,7 +229,7 @@ nav#menu-lateral{
     background-color: var(--color-primario-oscuro);
     color: var(--texto-claro);
     transform: translateX(0px);
-    transition: transform 300ms, box-shadow 300ms;
+    transition: transform var(--duracion-transicion), box-shadow var(--duracion-transicion);
     transition-timing-function: ease-in-out;
     z-index: 100;
     display: flex;
@@ -288,7 +291,7 @@ form, .form{
     width: 100%;
     border-radius: 5px; 
     padding: var(--espaciado);
-    animation: aparecer 500ms ease-in-out;
+    animation: aparecer var(--duracion-anim) ease-in-out;
     background-color: var(--color-fondo-resalto);
 }
 
@@ -296,6 +299,18 @@ form, .form{
     margin-bottom: var(--espaciado);
     display: flex;
     flex-direction: column;
+}
+
+.grupo-enlinea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grupo-enlinea button,
+.grupo-enlinea .boton {
+    margin: 0px;
 }
 
 label{
@@ -312,6 +327,9 @@ label{
     min-height: min-content;
 }
 
+.animado{
+    animation: aparecer var(--duracion-anim) ease-in-out forwards;
+}
 
 
 /* Animaciones */
