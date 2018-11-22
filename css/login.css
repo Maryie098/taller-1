@@ -17,3 +17,8 @@
     align-items: baseline;
     justify-content: space-between;
 }
+
+.tip-link{
+    position: absolute;
+    bottom: 15px;
+}

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="contenedor-principal">
+    <div id="app">
         <header id="barra-superior" class="sombra-clara">
             <div class="boton-barra boton-atras">
                 <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -28,28 +28,30 @@
         </header>
         <nav id="menu-lateral">
             <ul>
-                <li>Menú</li>
-                <li>Menú</li>
-                <li>Menú</li>
-                <li>Menú</li>
+                <li>Inicio</li>
+                <li>Iniciar Sesión</li>
+                <li>Registro</li>
+                <li>Acerca de nosotros</li>
             </ul>
         </nav>
-        <form action="auth.html" class="sombra-clara">
-            <div class="logo">
-                <img src="img/logo.png" alt="" srcset="">
-                <h2>¿Quienes Somos?</h2>
-            </div>
-            <div class="contenedorVideo">
-                <iframe src="https://www.youtube.com/embed/xPJ-Y8DNGO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="botones">
-                <button class="boton-primario">
-                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                    <span>Comencemos</span>
-                </button>
-            </div>
-        </form>
+        <div id="contenedor-principal">
+            <form class="sombra-clara" action="auth.html">
+                <div class="logo">
+                    <img src="img/logo.png" alt="" srcset="">
+                </div>
+                <h2 style="text-align: center;">¿Quienes Somos?</h2>
+                <div class="contenedorVideo">
+                    <iframe src="https://www.youtube.com/embed/xPJ-Y8DNGO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="botones">
+                    <button class="boton-primario">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <span>Comencemos</span>
+                    </button>
+                </div>
+            </form>
+        </div>        
         <!-- <footer></footer> -->
     </div>
     <!-- script -->

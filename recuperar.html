@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="contenedor-principal">
+    <div id="app">
         <header id="barra-superior" class="sombra-clara">
             <div class="boton-barra boton-atras">
                 <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -31,22 +31,24 @@
                 <li>Menú</li>
             </ul>
         </nav>
-        <form action="user.html">
-            <h1>
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Recuperar contraseña
-            </h1>
-            <div class="campos">
-                <label for="">Correo electrónico</label>
-                <input type="text" name="" id="" placeholder="Ej. liliana@bustos.com">
-            </div>
-            <div class="botones">
-                <a href="login.html">Iniciar sesión</a>
-                <button class="boton-primario">
-                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                    <span>Enviar</span>
-                </button>
-            </div>
-        </form>
+        <div id="contenedor-principal">
+            <form class="sombra-clara" action="user.html">
+                <h1>
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> Recuperar contraseña
+                </h1>
+                <div class="campos">
+                    <label for="">Correo electrónico</label>
+                    <input type="text" name="" id="" placeholder="Ej. liliana@bustos.com">
+                </div>
+                <div class="botones">
+                    <a href="login.html">Iniciar sesión</a>
+                    <button class="boton-primario">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        <span>Enviar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
         <!-- <footer></footer> -->
     </div>
     <!-- script -->

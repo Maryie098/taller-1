@@ -1,3 +1,7 @@
+form{
+    overflow: hidden;
+}
+
 .logo{
     width: 100%;
     text-align: center;
@@ -5,11 +9,15 @@
     padding-bottom: 15px;
     padding-left: 0px;
     padding-right: 0px;
+    opacity: 0;
+    animation: logo 1000ms linear 500ms forwards;
 }
 
 .logo > img{
     width: 50%;
     max-width: 150px;
+    transform-origin: center;
+    animation: moneda 1000ms linear 500ms forwards;
 }
 
 .contenedorVideo {
@@ -30,4 +38,27 @@
 .botones{
     margin-top: 25px;
     text-align: right;
+}
+
+
+/* Animaciones */
+
+@keyframes logo{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moneda{
+    0%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
