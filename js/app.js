@@ -11,7 +11,7 @@ botonAtras.addEventListener('click', function(e){
 });
 // Click en boton menu
 botonMenu.addEventListener('click', function(e){
-    abrirMenu();
+    abrirCerrarMenu();
 });
 
 /* FUNCIONES */
@@ -20,6 +20,6 @@ function volverAtras(){
     window.history.back();
 }
 // Abrir menú
-function abrirMenu(){
+function abrirCerrarMenu(){
     menuLateral.classList.toggle('menu-abierto');
 }

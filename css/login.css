@@ -5,10 +5,10 @@
     justify-content: space-evenly;
 }
 
-.campos{
+/* .campos{
     display: flex;
     flex-direction: column;    
-}
+} */
 
 .botones{
     margin-top: 25px;
