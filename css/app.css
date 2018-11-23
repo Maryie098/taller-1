@@ -103,6 +103,10 @@ h2{
     color: var(--color-primario-oscuro);
 }
 
+p{
+    text-align: justify;
+}
+
 .sombra-tenue{
     box-shadow: 0px 1px 5px -2px var(--gris-tenue);
 }
@@ -153,7 +157,8 @@ input[type="search"],
 input[type="url"],
 input[type="tel"],
 input[type="password"],
-input[type="number"]{
+input[type="number"],
+textarea{
     padding: 5px;
     border: 1px solid var(--gris-claro);
     border-radius: 5px;
@@ -167,7 +172,8 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 input[type="tel"]:focus,
 input[type="password"]:focus,
-input[type="number"]:focus{
+input[type="number"]:focus,
+textarea:focus{
     outline: none;
     border: 1px solid var(--color-primario);
     box-shadow: 0px 0px 3px 0px var(--color-primario);
@@ -306,6 +312,18 @@ form, .form{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.grupo-enlinea > input {
+    width: 100%;
+}
+
+.grupo-enlinea > * {
+    margin-right: var(--espaciado);
+}
+
+.grupo-enlinea > *:last-child {
+    margin-right: 0px;
 }
 
 .grupo-enlinea button,
