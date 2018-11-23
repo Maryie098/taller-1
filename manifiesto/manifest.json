@@ -1,11 +1,11 @@
 {
-  "name": "Maryie Liliana Bustos",
+  "name": "Maryie Liliana Bustos - Taller 1",
   "short_name": "Liliana Bustos",
   "theme_color": "#000000",
   "background_color": "#d5f9ff",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
+  "Scope": "/taller-1/",
   "start_url": "/index.html",
   "icons": [
     {
